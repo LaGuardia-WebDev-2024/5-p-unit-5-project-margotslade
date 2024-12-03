@@ -1,32 +1,59 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] height: and width:
-[  ] margin: and padding: 
-[  ] Three Images
+[yes] <div> and <span>
+[  yes] height: and width:
+[ yes ] margin: and padding: 
+[yes] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Flexbox
 [ no ] Feature 2 - Flip Card
 [ no ] Feature 3 - Navbar
-[ no ] Feature 4 - Shaking Animation
+[ yes! ] Feature 4 - Shaking Animation
 [ no ] Feature 5 - Gradient Background
 [ no ] Feature 6 - Spotify Playlist
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      .first{
+        color:green; font-style:italic;text-decoration:underline;
+      }
+      #info{background-color: rgb(170,235,242);}
+      .photo{ width:250px; margin:40px; border:5px solid hotpink; padding:3px;}
+      .image:hover{animation:shake 0.8s;}
+      @keyframes shake{
+        0%{transform:translate(20px,20px)rptate(0deg);}
+        10%{transform:translate(-20px,-20px)rotate(-1deg);}
+        20%{transform:translate(-20px,20px)rotate(1deg);}
+        30%{transform:translate(-10px,10px)rotate(1deg);}
+        40%{transform:translate(20px,-20px);}
+        60%{transform:translate(-20px,20px)rotate(0deg);}
+        70%{transform:translate(-10px,10px)rotate(0deg);}
+        80%{transform:translate(-20px,-20px)rotate(-1deg);}
+        90%{transform:translate(20px,-20px)rotate(1deg);}
+        100%{transform:translate(20px,20px)rotate(1deg);}
+      }
+    </style>
+  </head>
+  <body>
+    <div id="info">
+      <p>
+        <span class="first">blooobleeeeee</span>
+      </p>
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
-
-  </style>
-</head>
-<body>
-
- 
-
-</body>
+      <img class="photo"
+        src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/1-tyrannosaurus-rex-dinosaur-riding-taco-in-space-random-galaxy.jpg"
+      />
+      <img class="image"
+        src="https://geektropical.com/cdn/shop/files/Dinosaur-Galaxy-Pizza-Ships_Button-Up-Shirt-Pocket_5e071982-e4e7-43f2-a176-fd01177ca8dd-275708.jpg?v=1713867183"
+      />
+      <img
+        src="https://render.fineartamerica.com/images/rendered/default/print/6.5/8/break/images/artworkimages/medium/2/alien-riding-t-rex-dinosaur-in-space-random-galaxy.jpg">
+    </div>
+  </body>
 </html>
